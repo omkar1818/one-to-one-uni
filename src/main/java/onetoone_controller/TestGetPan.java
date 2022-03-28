@@ -16,6 +16,10 @@ public class TestGetPan {
 		Pan p = em.find(Pan.class, 1);
 		Person p1 = p.getP();
 
+		display(p, p1);
+	}
+
+	static void display(Pan p, Person p1) {
 		System.out.println("Pan number : " + p.getPanNum());
 		System.out.println("Pan issued date : " + p.getDate());
 		System.out.println("Pan issued country : " + p.getCountry());
@@ -23,5 +27,4 @@ public class TestGetPan {
 		System.out.println("Gender  : " + p1.getGender());
 		System.out.println("Contact number of the person " + p1.getPhone());
 	}
-
 }

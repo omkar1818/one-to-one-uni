@@ -19,6 +19,10 @@ public class TestGetBranch {
 		// with the help of getter method we get address object.
 		Address ad = b.getAdd();
 
+		display(ad, b);
+	}
+
+	static void display(Address ad, Branch b) {
 		System.out.println("Branch Name : " + b.getName());
 		System.out.println("Branch phone number : " + b.getPhoneNum());
 		System.out.println("Branch Address");
@@ -26,5 +30,4 @@ public class TestGetBranch {
 		System.out.println("Pin code : " + ad.getPin());
 		System.out.println("State : " + ad.getState());
 	}
-
 }
